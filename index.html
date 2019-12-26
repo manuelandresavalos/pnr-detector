@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PNR Detector</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="./externals/bootstrap4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <!-- Javascript -->
+  <script src="./externals/jquery-3.4.1.min.js"></script>
+  <script src="./externals/anime.min.js"></script>
+  <script src="./js/SceneManager.js"></script>
+  <script src="./js/phrases.js"></script>
+  <script src="./js/PNRManager.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row d-flex">
+      <div id="highScore" class="col text-right">High Score: 0/10 in 00:00:00</div>
+    </div>
+  </div>
+
+
+  <div id="startScene" class="container-fluid">
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-6 col-md-4">
+        <div class="col-sm-11 title text-center">
+          Record Locator Game!
+        </div>
+        <div class="col-sm-2 float-left">
+          <button id="clear">Clear</button>
+        </div>
+        <div class="col-sm-2 float-right">
+          <button class="start ">Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="PNRSelectorScene" class="container-fluid hide">
+    <div class="row d-flex justify-content-center">
+      <div id="gameTimer" class="col text-center">00:00:00</div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div id="cardsContainer" class="col-sm-6 col-md-4">
+        <!-- card -->
+        <div id="quiz-card-1" class="quiz-card col">
+          <div class="PNR">QPQTSX</div>
+          <div class="row d-flex justify-content-center buttons-options">
+            <button class="col-md-5" value="false">False</button>
+            <button class="col-md-5" value="true">True</button>
+          </div>
+        </div>
+        <!-- card -->
+
+      </div>
+    </div>
+  </div>
+
+  <div id="rankingScene" class="container-fluid hide">
+    <div class="row d-flex justify-content-center text-center">
+      <div id="final-result-answers" class="col-sm-6 col-md-8 final-result-answers">0 / 10</div>
+      <div class="col-sm-6 col-md-8">in</div>
+      <div id="final-result-time" class="col-sm-6 col-md-8 final-result-time">00:00:12</div>
+    </div>
+    <div class="row d-flex justify-content-center text-center">
+      <cite id="cite" class="col-sm-6 col-md-8">Loren inspum la lala hm...</cite>
+    </div>
+    <div class="row d-flex justify-content-center text-center">
+      <div class="col-sm-6 col-md-8">
+        <button class="restart">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

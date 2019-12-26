@@ -1,0 +1,14 @@
+{
+	"name": "pnr-detector",
+	"version": "1.0.0",
+	"description": "PNR Detector Game",
+	"main": "index.js",
+	"scripts": {
+		"start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js' --directory ---port 7777 --startPath index.html --browser chrome.exe"
+	},
+	"author": "Manuel Avalos",
+	"license": "MIT",
+	"dependencies": {
+		"browser-sync": "^2.26.7"
+	}
+}

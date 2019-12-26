@@ -1,0 +1,79 @@
+body {
+	background-color: #303030;
+	color: aliceblue;
+}
+
+div {
+	margin: 20px;
+}
+
+.hide {
+	display: none;
+}
+
+.container-fluid {
+	height: 100%;
+}
+
+/*
+START Scene
+*/
+#startScene .title {
+	height: 240px;
+	font-size: 24px;
+	border: 1px solid white;
+	border-radius: 15px;
+	padding-top: 90px;
+}
+
+.start {
+	text-align: center;
+	clear: both;
+}
+
+/*
+SELECTION Scene
+*/
+#gameTimer {
+	font-size: 2rem;
+}
+
+.quiz-card {
+	border: 1px solid #ffffff;
+	height: 240px;
+	border-radius: 15px;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	width: 90%;
+	background-color: #303030;
+}
+
+.quiz-card .PNR {
+	margin-top: 80px;
+	color: white;
+	text-align: center;
+	font-size: 36px;
+}
+
+.quiz-card .buttons-options {
+	font-size: 18px;
+	margin-top: 60px;
+}
+
+.quiz-card .buttons-options button {
+	border-radius: 5px;
+	border: none;
+	margin: 4px;
+}
+
+/*
+RANKING Scene
+*/
+
+.final-result-answers {
+	font-size: 76px;
+}
+
+.final-result-time {
+	font-size: 44px;
+}
